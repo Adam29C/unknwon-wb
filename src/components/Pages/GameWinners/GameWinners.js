@@ -49,11 +49,11 @@ const Section3 = () => {
       <div className="container">
         <div className="winner-container">
           <div className="heding-sec heading-sec-custom m-2 d-flex text-center justify-content-center align-items-center">
-            <img src={star} alt="https://rich143.com/" />
+            <img src={star} alt="https://star143.com/" />
             <h1 className="mb-0 mt-3 ms-2 me-2 font-700">
               Today's Top Winners
             </h1>
-            <img src={star} alt="https://rich143.com/" />
+            <img src={star} alt="https://star143.com/" />
           </div>
           <Slider {...settings}>
             <div>

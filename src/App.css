@@ -25,14 +25,14 @@
   --color-open: #37a148;
   --color-close: #11305c;
   --color-red: red;
-  --color-primary: #237f8aff;
+  --color-primary: #000000;
   --bg-primary: #fcf3e5;
   --bg-light: #edefef;
   --color-orange: #11305c;
   --light-black: #acaebb;
   transition: --vh 0.3s ease;
 
-  --rich-new-color: linear-gradient(to top, #a3dadd, #5ebdc4);
+  --rich-new-color: #478767;
 }
 .f-size {
   font-size: 18px;
@@ -45,7 +45,7 @@
   color: #fff;
 }
 a:hover {
-  color: var(--rich-color);
+  color: var(--color-primary);
 }
 
 .charts-games {
@@ -79,11 +79,16 @@ body {
   /* color:"rgb(7, 83, 88)"!important */
 }
 .download-button {
-  background-color: #075358 !important;
+  /* background-color: var(--color-primary) !important; */
+  background-color: var(--rich-new-color) !important;
   color: #fff;
   font-weight: 500;
   padding: 8px;
 }
+.border {
+  border: 1px solid black !important;
+}
+
 .mr-15px {
   margin-right: 15px;
 }
@@ -164,7 +169,8 @@ th {
   /* background-color: #1C3E35; */
   color: #ffffff;
   padding: 1rem;
-  background-image: url("./RichImages/bgfooterimage.png");
+  background-color: var(--rich-new-color);
+  /* background-image: url("./RichImages/bgfooterimage.png"); */
   background-size: cover; /* makes image cover the whole div */
   background-position: center; /* centers the image */
   background-repeat: no-repeat;
@@ -256,7 +262,7 @@ th {
   /* color: black; */
 }
 .primary-color {
-  color: var(--rich-color);
+  color: var(--color-primary);
 }
 
 .back-btn {
@@ -517,6 +523,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   background-image: url("./RichImages/grid-svgrepo-com\ \(2\).svg");
   width: 40px;
   height: 30px;
+  margin-bottom: 8px;
 }
 
 .main-btn-a {
@@ -876,7 +883,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
   .nav-link,
   .nav-link.active {
     font-size: 1rem !important;
-    color: black;
+    color: #000;
   }
   .card {
     width: 100%;
@@ -1189,7 +1196,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 
 @media (min-width: 1024px) {
   .navigation-links {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .chart-header {
     padding: 50px 50px;
@@ -1312,7 +1319,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     border-radius: 12px;
   }
   .nav-link {
-    color: black;
+    color: #000;
   }
 
   /* .download-btn button {
@@ -1328,7 +1335,6 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     width: 48%;
   }
 
-
   .button-container {
     top: 92px !important;
     position: absolute;
@@ -1339,12 +1345,12 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     margin-top: 28px;
     right: 30px;
   }
-  
 }
 @media (max-width: 575.98px) {
   button.download-button.test {
-    background-color: #075358 !important;
+    background-color: var(--rich-new-color) !important;
     color: #fff;
+    margin-top: -15px;
     font-weight: 500;
     padding: 8px;
     width: 174px;
@@ -1378,16 +1384,17 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 .header-container {
-  height: 100px;
+  height: 80px;
   width: 100%;
   max-width: 1440px;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     #5ebdc4,
     #a3dadd
-  ); /* background-color: var(--rich-color);  */
+  ); */
+  /* background-color: var(--rich-new-color); */
   /* background-color: red; */
-  /* background: url("./images/header-background.svg") no-repeat center center; */
+  background: url("../src/RichImages/newheader.svg") no-repeat center center;
   margin-top: 0;
 }
 .header-content-main {
@@ -1437,7 +1444,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 .charts-games {
-  border-bottom: 3px solid rgba(2, 138, 148, 0.2);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
   margin-top: 10px;
   padding: 5px;
   width: 70%;
@@ -1449,7 +1456,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 
 .charts-games h4 {
-  color: #075358;
+  color: #000000;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
@@ -1459,7 +1466,7 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 .charts-games-title {
   color: #000000;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 50px;
   text-align: left;
   margin-bottom: 15px;
@@ -1481,25 +1488,42 @@ button.navbar-toggler.navbar-toggler-btn:focus {
 }
 th.cc {
   background: var(--rich-new-color);
+  color: #fff !important;
 }
 
 td.cc.td-width-13 {
-  background: var(--rich-new-color);
+  /* background: var(--rich-new-color); */
   padding-bottom: 0;
   position: sticky;
   left: 0;
-
 }
 thead.tr.th.ch {
   background: var(--rich-new-color);
 }
 th.ch {
   background: var(--rich-new-color);
+  color: #fff !important;
 }
 
 td.ccccc {
-  background: var(--rich-new-color);
+  /* background: var(--rich-new-color); */
   padding-bottom: 0;
   position: sticky;
   left: 0;
+}
+@media (max-width: 480px) {
+  .card-text-main h5 {
+    font-size: 18px;
+  }
+  .card-text-main h3 {
+    font-size: 15px;
+  }
+  h1.mb-0.ms-2.me-2.rich-game-title.backgroundoftitle {
+    font-size: 16px !important;
+    padding: 0px 10px;
+  }
+  .game-icons-img {
+    height: 20px !important;
+    width: 20px !important;
+  }
 }

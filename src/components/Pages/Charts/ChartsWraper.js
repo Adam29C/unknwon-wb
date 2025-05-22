@@ -37,9 +37,9 @@ const Charts = () => {
       <Navbar />
       <div
         className="container-fluid"
-        style={{ backgroundColor: "#E7E7E8", padding: "20px" }}
+        style={{  padding: "20px",backgroundColor:'#f1f1f1', }}
       >
-        <div className="row">
+        <div className="row" >
           <Jodi_Chart title="Jodi Chart" data={getChart} link="jodi" />
           <Pana_Chart title="Pana Chart" data={getChart} link="pana" />
           <Shree_Starline title="Starline" data={getStarline} link="starline" />
@@ -48,10 +48,13 @@ const Charts = () => {
         <div
           style={{ display: "flex", justifyContent: "center", marginTop: 10 }}
         >
-          <button                   onClick={() => navigate(-1)}
- class="download-button" style={{ paddingLeft: "35px",paddingRight: "35px" }}>
+          <button
+            onClick={() => navigate(-1)}
+            class="download-button"
+            style={{ paddingLeft: "35px", paddingRight: "35px" }}
+          >
             Back &nbsp;
-            <img style={{width:'10px'}} src={back} />
+            <img style={{ width: "10px" }} src={back} />
           </button>
         </div>
       </div>

@@ -77,40 +77,28 @@ const Pana_Chart = () => {
         <div className="row">
           <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header ">
             <div className="">
-              {/* <h2 className="chart-header-font">
-                <strong style={{ color: "rgb(51, 51, 51)" }}>
-                  Starline &nbsp;
-                  {location.state.title === "allratanstarline"
-                    ? ""
-                    : location.state.title}
-                  &nbsp; Chart
-                </strong>
-              </h2> */}
               <div className="d-flex justify-content-center align-items-center">
-                <img
-                  className="game-icons-img"
-                  style={{ height: "25px" }}
-                  src={stars}
-                  alt="https://rich143.com/"
-                />
-                <h1
-                  class="mb-0 ms-2 me-2 rich-game-title"
-                  style={{ color: "#075358", fontSize: "28px" }}
-                >
-                  Starline &nbsp;
-                  {location.state.title === "allratanstarline"
-                    ? ""
-                    : location.state.title}
-                  &nbsp; Chart
-                </h1>
-                <img
-                  className="game-icons-img"
-                  style={{ height: "25px" }}
-                  src={stars}
-                  alt="https://rich143.com/"
-                />
+                <div className="backgroundoftitle">
+                  <img
+                    className="game-icons-img"
+                    src={stars}
+                    alt="https://star143.com/"
+                  />
+                  <h1 class="mb-0 ms-2 me-2 rich-game-title backgroundoftitle">
+                    Starline &nbsp;
+                    {location.state.title === "allratanstarline"
+                      ? ""
+                      : location.state.title}
+                    &nbsp; Chart
+                  </h1>
+                  <img
+                    className="game-icons-img"
+                    src={stars}
+                    alt="https://star143.com/"
+                  />
+                </div>
               </div>
-              <p style={{ fontWeight: 600 }}>
+              <p style={{ fontWeight: 600, marginTop: "10px" }}>
                 {location.state.title === "allratanstarline"
                   ? ""
                   : location.state.title}
@@ -177,20 +165,19 @@ const Pana_Chart = () => {
               ) : (
                 ""
               )}
-             
             </div>
           </div>
           <div className="d-flex justify-content-center">
-                <button
-                  class="download-button"
-                  style={{ paddingLeft: "35px", paddingRight: "35px" }}
-                  onClick={() => navigate(-1)}
-                  id="scroll-down-button"
-                >
-                  Back &nbsp;
-                  <img style={{ width: "10px" }} src={back} />
-                </button>
-              </div>
+            <button
+              class="download-button"
+              style={{ paddingLeft: "35px", paddingRight: "35px" }}
+              onClick={() => navigate(-1)}
+              id="scroll-down-button"
+            >
+              Back &nbsp;
+              <img style={{ width: "10px" }} src={back} />
+            </button>
+          </div>
         </div>
       </div>
 

@@ -14,19 +14,19 @@ import AboutUs from "./components/Pages/About Us/AboutUs";
 const App = () => {
   return (
     <>
-     <Router>
-      <Routes>
-        <Route path="/" element={<Wraper />} />
-        <Route path="/charts/" element={<Charts />} />
-        <Route path="/starline/:title" element={<StartLineGames />} />
-        <Route path="/andarbahar/:id" element={<AndarBaharChart />} />
-        <Route path="/pana-chart/:title/:Chart" element={<Pana_Chart />} />
-        <Route path="/jodi-chart/:title/:Chart" element={<Jodi_Chart />} />
-        <Route path="/terms-conditions" element={<TermsCondition />} />
-        <Route path="/how-to-play" element={<AboutGames />} />
-        <Route path="/about-us" element={<AboutUs />} />
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Wraper />} />
+          <Route path="/charts/" element={<Charts />} />
+          <Route path="/starline/:title" element={<StartLineGames />} />
+          <Route path="/andarbahar/:id" element={<AndarBaharChart />} />
+          <Route path="/pana-chart/:title/:Chart" element={<Pana_Chart />} />
+          <Route path="/jodi-chart/:title/:Chart" element={<Jodi_Chart />} />
+          <Route path="/terms-conditions" element={<TermsCondition />} />
+          <Route path="/how-to-play" element={<AboutGames />} />
+          <Route path="/about-us" element={<AboutUs />} />
+        </Routes>
+      </Router>
     </>
   );
 };

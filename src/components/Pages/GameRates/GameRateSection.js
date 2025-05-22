@@ -6,7 +6,7 @@ const GameRateSection = () => {
   const [getData, setgetData] = useState([]);
 
 
-  console.log("getData", getData);
+  // console.log("getData", getData);
   
 
   const getResponseData = async () => {
@@ -30,7 +30,7 @@ const GameRateSection = () => {
     );
     setgetData(uniqueData);
 
-    console.log("Game Rates", uniqueData);
+    // console.log("Game Rates", uniqueData);
   };
   useEffect(() => {
     getResponseData();
@@ -45,11 +45,10 @@ const GameRateSection = () => {
               className="game-icons-img"
               style={{ height: "25px" }}
               src={stars}
-              alt="https://rich143.com/"
+              alt="https://star143.com/"
             />
             <h1
               class="mb-0 ms-2 me-2 rich-game-title"
-              style={{ color: "#075358", fontSize: "28px" }}
             >
               Game Rate
             </h1>
@@ -57,10 +56,10 @@ const GameRateSection = () => {
               className="game-icons-img"
               style={{ height: "25px" }}
               src={stars}
-              alt="https://rich143.com/"
+              alt="https://star143.com/"
             />
           </div>
-          <p className="rich-game-title-text" style={{ fontWeight: 600 }}>
+          <p className="rich-game-title-text" >
             We Have Best Game Rates in market
           </p>
         </div>
@@ -68,13 +67,14 @@ const GameRateSection = () => {
         <div className="row">
           {getData?.map((items, index) => (
             <div key={index} className="Card_Size game-rate-card-cust">
-              <h1 style={{ color: "black", fontWeight: 600 }}>
+              <h1 >
                 {items.gameName}
               </h1>
 
-              <h5 className="" style={{ color: "black", marginTop: "5px" }}>
-                1 RS KA {items.gamePrice}
+              <h5 className=""  >
+                1 Rs. Ka {items.gamePrice}
               </h5>
+              <div className="divider" />
             </div>
           ))}
         </div>

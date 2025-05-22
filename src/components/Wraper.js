@@ -12,9 +12,6 @@ import FandQSection from "./Pages/FandQSection/FandQSection";
 import AndarBahar from "./games/AndarBahar/AndarBaharGames";
 
 const Wraper = () => {
-
-
-  
   return (
     <>
       <Navbar />
