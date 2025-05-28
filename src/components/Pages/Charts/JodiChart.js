@@ -4,25 +4,22 @@ import stars from "../../../RichImages/stars.svg";
 const JodiChart = (props) => {
   return (
     <>
-      <div className="d-flex justify-content-center align-items-center">
-        <img
-          className="game-icons-img"
-          style={{ height: "25px" }}
-          src={stars}
-          alt="https://rich143.com/"
-        />
-        <h1
-          class="mb-0 ms-2 me-2 rich-game-title"
-          style={{ color: "#075358", fontSize: "28px",marginTop:15 }}
-        >
-          All Games Charts
-        </h1>
-        <img
-          className="game-icons-img"
-          style={{ height: "25px" }}
-          src={stars}
-          alt="https://rich143.com/"
-        />
+      <div className="d-flex justify-content-center align-items-center ">
+        <div className="backgroundoftitle">
+          <img
+            className="game-icons-img"
+            src={stars}
+            alt="https://radha567.com/"
+          />
+          <h1 class="mb-0 ms-2 me-2 rich-game-title backgroundoftitle">
+            All&nbsp;Games&nbsp;Charts
+          </h1>
+          <img
+            className="game-icons-img"
+            src={stars}
+            alt="https://radha567.com/"
+          />
+        </div>
       </div>
       <Chart_Container
         {...props}

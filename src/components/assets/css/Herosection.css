@@ -124,8 +124,10 @@ button.download-button {
 
 .images-main-herosection {
   display: flex;
+  margin-top: 15px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 30px;
 }
 
 .multi-image-main {
@@ -133,6 +135,7 @@ button.download-button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 6px;
 }
 
 .multi-image-main p {
@@ -140,12 +143,17 @@ button.download-button {
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  color: #717171;
+  color: #fff;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-radius: 5px;
+  background: var(--rich-new-color);
 }
 
 .multi-image-main h1 {
   font-weight: 600;
-  font-size: 16px;
+  margin-top: 0px;
+  font-size: 18px;
   line-height: 30px;
   text-align: center;
   color: #000000;
@@ -203,15 +211,16 @@ button.download-button {
 .second-parent {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .custom-text {
   font-weight: 500;
   font-size: 1.8rem;
-  color: #2c3e50;
+  color: #000000;
 }
 .lead {
   font-size: 3rem;
-  color: #34495e;
+  color: #000000;
   font-family: poppins, sans-serif;
   font-weight: 600;
 }
@@ -241,8 +250,34 @@ button.download-button {
     margin-top: 28px;
     right: 30px;
   }
-}
+  .multi-image-main p {
+    font-size: 15px;
+    line-height: 30px;
+  }
 
+  .multi-image-main h1 {
+    font-weight: 600;
+    margin-top: -13px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+}
+@media (max-width: 768px) {
+  .multi-image-main p {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .multi-image-main h1 {
+    font-weight: 600;
+    margin-top: -13px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+}
 /* .btn-custom {
   background-color: #28a745;
   color: white;
@@ -254,24 +289,37 @@ button.download-button {
 a.download-button.new-btn {
   text-decoration: none;
   margin: 5px 12px;
-  padding: 6px 30px;
+  border-radius: 10px;
+  padding: 10px 30px;
   color: #fff !important;
 }
 .contact-info {
   font-weight: 500;
   font-size: 1.4rem;
   color: #000000;
+  text-align: center;
 }
 
-.contact-number {
-  font-weight: 400;
-  color: #34495e;
+span.contact-number {
+  font-weight: 500;
+  padding-top: 6px;
+  padding-left: 54px;
+  padding-right: 54px;
+  padding-bottom: 6px;
+  color: #fff;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-align: center;
+  /* background: linear-gradient(to bottom, #1d192b, #b2b2b2); */
+  background-color: var(--rich-new-color);
+  height: 100%;
+  width: 100%;
 }
 
-.images-main-herosection {
+/* .images-main-herosection {
   background: linear-gradient(
     360deg,
     rgba(163, 218, 221, 0.2) 2.11%,
     rgba(94, 189, 196, 0.2) 96.71%
   );
-}
+} */

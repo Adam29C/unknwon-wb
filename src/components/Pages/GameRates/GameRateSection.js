@@ -5,9 +5,7 @@ import stars from "../../../RichImages/stars.svg";
 const GameRateSection = () => {
   const [getData, setgetData] = useState([]);
 
-
-  console.log("getData", getData);
-  
+  // console.log("getData", getData);
 
   const getResponseData = async () => {
     const res = await GET_ALL_GAMERATES();
@@ -24,13 +22,13 @@ const GameRateSection = () => {
       res.data.splice(index + 1, 0, triplePana);
     }
 
-
-    const uniqueData = res.data.filter((item, index, self) =>
-      index === self.findIndex(t => t.gameName === item.gameName)
+    const uniqueData = res.data.filter(
+      (item, index, self) =>
+        index === self.findIndex((t) => t.gameName === item.gameName)
     );
     setgetData(uniqueData);
 
-    console.log("Game Rates", uniqueData);
+    // console.log("Game Rates", uniqueData);
   };
   useEffect(() => {
     getResponseData();
@@ -45,22 +43,17 @@ const GameRateSection = () => {
               className="game-icons-img"
               style={{ height: "25px" }}
               src={stars}
-              alt="https://rich143.com/"
+              alt="https://radha567.com/"
             />
-            <h1
-              class="mb-0 ms-2 me-2 rich-game-title"
-              style={{ color: "#075358", fontSize: "28px" }}
-            >
-              Game Rate
-            </h1>
+            <h1 class="mb-0 ms-2 me-2 rich-game-title">Game Rate</h1>
             <img
               className="game-icons-img"
               style={{ height: "25px" }}
               src={stars}
-              alt="https://rich143.com/"
+              alt="https://radha567.com/"
             />
           </div>
-          <p className="rich-game-title-text" style={{ fontWeight: 600 }}>
+          <p className="rich-game-title-text">
             We Have Best Game Rates in market
           </p>
         </div>
@@ -68,13 +61,10 @@ const GameRateSection = () => {
         <div className="row">
           {getData?.map((items, index) => (
             <div key={index} className="Card_Size game-rate-card-cust">
-              <h1 style={{ color: "black", fontWeight: 600 }}>
-                {items.gameName}
-              </h1>
+              <h1>{items.gameName}</h1>
 
-              <h5 className="" style={{ color: "black", marginTop: "5px" }}>
-                1 RS KA {items.gamePrice}
-              </h5>
+              <h5 className="">1 Rs. Ka {items.gamePrice}</h5>
+              <div className="divider" />
             </div>
           ))}
         </div>

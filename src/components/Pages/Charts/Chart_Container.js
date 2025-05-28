@@ -3,8 +3,8 @@ import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import { Link } from "react-router-dom";
 import { GET_ALL_GAMESLIST } from "../../service/admin.service";
-import icon from "../../../RichImages/chartlist.svg";
-import stars from "../../../RichImages/stars.svg"
+import icon from "../../../RichImages/newchartlist.svg";
+import stars from "../../../RichImages/stars.svg";
 const Charts_Container = ({ title, data, link, responsive_Class }) => {
   const Details = (route, name) => {
     if (route === "jodi") {
@@ -22,16 +22,22 @@ const Charts_Container = ({ title, data, link, responsive_Class }) => {
 
   return (
     <>
- 
-      <div className={responsive_Class} >
-        <div className="timetable"style={{backgroundColor:'#fff',padding:'30px',borderRadius:'20px'}}>
+      <div className={responsive_Class}>
+        <div
+          className="timetable"
+          style={{
+            backgroundColor: "#fff",
+            padding: "30px",
+            borderRadius: "20px",
+          }}
+        >
           <div className="charts-games-main">
             <h3 className="charts-games-title"> {title}</h3>
             <div>
               {title === "Starline" || title === "Jackpot" ? (
                 <>
                   <div className="charts-games">
-                    <img src={icon} />
+                    {/* <img src={icon} /> */}
 
                     <h4 className="">
                       <Link
@@ -40,6 +46,7 @@ const Charts_Container = ({ title, data, link, responsive_Class }) => {
                             ? "/starline/allratanstarline"
                             : "/andarbahar/allratanjackpot"
                         }
+                        style={{ opacity: 0.8 }}
                         className="text-decoration-none primary-color"
                         state={{
                           title:

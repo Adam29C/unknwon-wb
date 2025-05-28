@@ -1,4 +1,3 @@
-
 img,
 svg {
   vertical-align: middle;
@@ -74,14 +73,12 @@ button:not(:disabled) {
   cursor: pointer;
 }
 
-
 .slider-parent .card-section {
   margin: 0 5px;
 }
 .text-center {
   text-align: center !important;
 }
-
 
 .card-section {
   padding: 1rem;
@@ -113,52 +110,80 @@ button:not(:disabled) {
 
 .game-rate-container {
   /* border: 1px solid red; */
-padding: 10px 50px 50px 50px;
-background: #FFFFFF;
-/* box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25); */
-/* border-radius: 80px 0px; */
+  padding: 10px 50px 50px 50px;
+  background: #ffffff;
+  /* box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25); */
+  /* border-radius: 80px 0px; */
   box-shadow: inset;
 }
 
 .rich-game-title-text {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24.8px;
   color: #000000;
 }
 
 .rich-game-title {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 60px;
+  margin-top: 5px;
   /* background: linear-gradient(97.51deg, #1C3E35 -39.91%, #4AA48C 117.67%); */
   -webkit-background-clip: text;
-  color:   #075358;
+  /* color: #000000; */
+  color: var(--rich-new-color);
   /* -webkit-text-fill-color: transparent; */
   background-clip: text;
   text-fill-color: transparent;
   text-transform: uppercase;
 }
+.backgroundoftitle {
+  background: var(--rich-new-color);
+  color: #fff;
+  padding: 0px 25px;
+  border-radius: 10px;
+  display: flex;
 
-.game-rate-card-cust{
-padding: 10px;
-background: #FBFBFB;
-/* box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25); */
-/* border-radius: 50px 0px; */
-text-align: center;
-margin: 10px;
-border-left: 5px solid #075358;
-
+  align-items: center;
+}
+.game-rate-card-cust {
+  padding: 10px;
+  background: #fbfbfb;
+  /* box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25); */
+  /* border-radius: 50px 0px; */
+  text-align: center;
+  margin: 10px;
 }
 
-.game-rate-card-cust h1{
+.game-rate-card-cust h1 {
   font-size: 22px;
   line-height: 30px;
-    font-weight: 400;
+  color: #fff;
+  background: var(--rich-new-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 600;
+  border-radius: 8px;
 }
 
-.game-rate-card-cust h2{
-    font-size: 24px;
-    line-height: 29.76px;
-    font-weight: 400;
+.game-rate-card-cust h5 {
+  font-size: 24px;
+  line-height: 29.76px;
+  font-weight: 450;
+  color: black;
+  margin-top: 10px;
+  border: 2px solid black;
+  padding: 10px 8px;
+  border-radius: 8px;
+  margin-top: -5px;
+  /* border-bottom: 5px solid #000000; */
+}
+.divider {
+  border: 3px solid var(--rich-new-color);
+  width: 50%;
+  margin-left: 25%;
+  margin-top: -10px;
 }

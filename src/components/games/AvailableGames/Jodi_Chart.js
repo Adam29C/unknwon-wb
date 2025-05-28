@@ -87,27 +87,24 @@ const Pana_Chart = () => {
           <div className="text-center col-xl-12 col-q-12 col-md-12 col-sm-12 chart-header ">
             <div className="">
               <div className="d-flex justify-content-center align-items-center">
-                <img
-                  className="game-icons-img"
-                  style={{ height: "25px" }}
-                  src={stars}
-                  alt="https://rich143.com/"
-                />
-                <h1
-                  class="mb-0 ms-2 me-2 rich-game-title"
-                  style={{ color: "#075358", fontSize: "28px" }}
-                >
-                  {location.state.title}
-                </h1>
-                <img
-                  className="game-icons-img"
-                  style={{ height: "25px" }}
-                  src={stars}
-                  alt="https://rich143.com/"
-                />
+                <div className="backgroundoftitle">
+                  <img
+                    className="game-icons-img"
+                    src={stars}
+                    alt="https://radha567.com/"
+                  />
+                  <h1 class="mb-0 ms-2 me-2 rich-game-title backgroundoftitle">
+                    {location.state.title}
+                  </h1>
+                  <img
+                    className="game-icons-img"
+                    src={stars}
+                    alt="https://radha567.com/"
+                  />
+                </div>
               </div>
 
-              <p style={{ fontWeight: 600 }}>
+              <p style={{ fontWeight: 600, marginTop: "10px" }}>
                 {location.state.title} Jodi Chart Satta Matka Record Old History
                 Historical Data Bracket Results Chart Online Live Book Digits
                 Numbers

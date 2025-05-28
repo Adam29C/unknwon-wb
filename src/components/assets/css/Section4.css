@@ -58,6 +58,7 @@ table {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding-bottom: 10px;
+  padding: 3px;
 }
 
 .card-section {
@@ -128,7 +129,7 @@ table {
   .charts-games-title {
     color: #000000;
     font-weight: 700;
-    font-size: 30px !important;
+    font-size: 20px !important;
     line-height: 50px;
     text-align: center;
     margin-bottom: 15px;
@@ -136,7 +137,7 @@ table {
   .charts-games h4 {
     color: #1c3e35;
     font-weight: 700;
-    font-size: 20px !important;
+    font-size: 13px !important;
     line-height: 30px;
     text-align: center;
   }
@@ -158,16 +159,21 @@ table {
     padding: 0 0px !important;
     font-size: 14px;
   }
+  
 
   .result__time span {
-    font-size: 13px;
+    font-size: 11px;
   }
+  .result__time strong {
+    font-size: 11px;
+  }
+
 }
 
 @media (max-width: 1024px) {
   .second-card .chat-btn {
     margin-top: 10px;
-    min-width: 130px;
+    /* min-width: 130px; */
     padding: 0 10px;
   }
   .second-card-top-sec {
@@ -178,11 +184,16 @@ table {
     font-size: 20px;
   }
 }
-
+@media (max-width: 480px) {
+  .card-text-main h5 {
+    font-size: 15px;
+  }
+}
 .accordion-container .accordion-section {
   border: 1px solid #d4d2e3;
   color: var(--color-primary);
   border-radius: 8px;
+  background-color:var(--rich-new-color);
   margin-bottom: 10px;
   padding: 1.25rem 1rem;
   font-weight: normal;
@@ -200,9 +211,9 @@ table {
 /* Chat Button Styles */
 .chat-btn {
   background-color: #fff;
-  border: 2px solid #028a94;
+  border: 2px solid #000000;
   border-radius: 12px;
-  color: #2a5e50;
+  color: #000000;
   font-weight: 500;
   min-width: 142px;
   padding: 0 30px;
@@ -212,8 +223,8 @@ table {
 }
 
 .chat-btn:hover {
-  background: linear-gradient(to right, #a3dadd -39.91%, #5ebdc4 117.67%);
-  color: #000;
+  background: var(--rich-new-color);
+  color: #fff;
 }
 
 /* Footer Image Styles */
@@ -258,16 +269,16 @@ table {
 }
 
 .result__time {
-  gap: 40px;
+  gap: 10px;
   margin-top: 8px;
 }
 
 .result__time span {
   font-family: 14px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 23px;
   text-align: center;
-  color: #028a94;
+  color: #000;
 }
 
 .result__time span strong {
@@ -276,14 +287,18 @@ table {
   font-weight: 600;
 }
 .second-card-title {
-  color: #028a94;
+  color: #000000;
   font-weight: 600;
   font-size: 20px;
   line-height: 24.8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .second-card-text {
   color: #000;
+  opacity: 0.6;
   font-weight: 600;
   font-size: 20px;
   line-height: 24.8px;
@@ -295,7 +310,8 @@ table {
 }
 
 .acc-bg-color {
-  background-color: #a8d3c8;
+  background-color: #000;
+  color: #fff;
   border: none !important;
 }
 
@@ -312,3 +328,10 @@ table {
   font-size: 17px;
   line-height: 30px;
 }
+.img {
+  height: 18px;
+}
+.playicon{
+  height: 40px;
+}
+

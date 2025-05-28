@@ -1,11 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
-// import headerLog from "../../../RichImages/Rich143 logo.svg";
-// import download_btn from "../../../RichImages/download_btn.png";
 import downloadbutton from "../../../RichImages/downloadbutton.svg";
 // import headerLog from "../../../RichImages/Websitelogo12.png";
-import headerLog from "../../../RichImages/updatedlogo.svg";
+import headerLog from "../../../RichImages/newradhaLogo.png";
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -31,7 +29,7 @@ const Navbar = () => {
           <div className="header-container">
             <nav className="navbar navbar-expand-lg">
               <div className="container-fluid header-content-main">
-                <div style={{ marginTop: "10px" }}>
+                <div style={{ marginTop: "5px" }}>
                   <Logo />
                 </div>
                 <button
@@ -58,7 +56,7 @@ const Navbar = () => {
                     <NavigationLinks />
                   </div>
 
-                  <div className="download-btn-main-12">
+                  <div className="download-btn-main-12 ">
                     <DownloadButton />
                   </div>
                 </div>
@@ -75,7 +73,11 @@ const Logo = () => {
   return (
     <>
       <Link className="nav-link  active" aria-current="page" to="/">
-        <img className="logo_navbar" src={headerLog} alt="https://rich143.com/" />
+        <img
+          className="logo_navbar"
+          src={headerLog}
+          alt="https://radha567.com/"
+        />
       </Link>
     </>
   );
@@ -85,25 +87,25 @@ const NavigationLinks = () => {
   return (
     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
       <li className="nav-item">
-        <NavLink
+        <Link
           className="nav-link link-hover-effect"
           // className="nav-link "
-          style={{ color: "#075358" }}
+          // style={{ color: "white" }}
           // className={({ isActive }) => (isActive ? "nav-link " : "nav-link ")}
           to="/"
         >
           Home
-        </NavLink>
+        </Link>
       </li>
       <li className="nav-item">
-        <NavLink
-          style={{ color: "#075358" }}
+        <Link
+          // style={{ color: "white" }}
           // className={({ isActive }) => (isActive ? "nav-link " : "nav-link ")}
           className="nav-link link-hover-effect"
           to="/charts"
         >
           Charts
-        </NavLink>
+        </Link>
       </li>
     </ul>
   );
@@ -124,10 +126,18 @@ const DownloadButton = () => {
       <div class="button-container_3">
         <div class="button-container_2">
           <div class="button-container">
-            <button class="download-button test" onClick={download}>
+            <button
+              class="download-button test border"
+              // onClick={download}
+              // disabled
+            >
               <span>Download App</span>
               &nbsp;
-              <img className="test_image" src={downloadbutton} alt="https://rich143.com/" />
+              <img
+                className="test_image"
+                src={downloadbutton}
+                alt="https://radha567.com/"
+              />
             </button>
           </div>
         </div>

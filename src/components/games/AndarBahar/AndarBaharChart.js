@@ -84,30 +84,27 @@ const Andar_Bahar_Chart = (props) => {
               </h2> */}
 
               <div className="d-flex justify-content-center align-items-center">
-                <img
-                  className="game-icons-img"
-                  style={{ height: "25px" }}
-                  src={stars}
-                  alt="https://rich143.com/"
-                />
-                <h1
-                  class="mb-0 ms-2 me-2 rich-game-title"
-                  style={{ color: "#075358", fontSize: "28px" }}
-                >
-                  Jackpot &nbsp;
-                  {location.state.title === "allratanjackpot"
-                    ? ""
-                    : location.state.title}
-                  &nbsp; Chart
-                </h1>
-                <img
-                  className="game-icons-img"
-                  style={{ height: "25px" }}
-                  src={stars}
-                  alt="https://rich143.com/"
-                />
+                <div className="backgroundoftitle">
+                  <img
+                    className="game-icons-img"
+                    src={stars}
+                    alt="https://radha567.com/"
+                  />
+                  <h1 class="mb-0 ms-2 me-2 rich-game-title  backgroundoftitle">
+                    Jackpot &nbsp;
+                    {location.state.title === "allratanjackpot"
+                      ? ""
+                      : location.state.title}
+                    &nbsp; Chart
+                  </h1>
+                  <img
+                    className="game-icons-img"
+                    src={stars}
+                    alt="https://radha567.com/"
+                  />
+                </div>
               </div>
-              <p style={{ fontWeight: 600 }}>
+              <p style={{ fontWeight: 600, marginTop: "10px" }}>
                 {location.state.title === "allratanjackpot"
                   ? ""
                   : location.state.title}
