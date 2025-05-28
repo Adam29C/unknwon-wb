@@ -152,7 +152,7 @@ button.download-button {
 
 .multi-image-main h1 {
   font-weight: 600;
-  margin-top: -13px;
+  margin-top: 0px;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -297,6 +297,7 @@ a.download-button.new-btn {
   font-weight: 500;
   font-size: 1.4rem;
   color: #000000;
+  text-align: center;
 }
 
 span.contact-number {
@@ -308,6 +309,7 @@ span.contact-number {
   color: #fff;
   margin-top: 5px;
   border-radius: 5px;
+  text-align: center;
   /* background: linear-gradient(to bottom, #1d192b, #b2b2b2); */
   background-color: var(--rich-new-color);
   height: 100%;

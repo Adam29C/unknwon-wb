@@ -8,7 +8,7 @@ import gameicon from "../../../RichImages/game.svg";
 import supporticon from "../../../RichImages/support.svg";
 import call from "../../../RichImages/whatspp.svg";
 import whatspp from "../../../RichImages/call.svg";
-import heroimagerich from "../../../RichImages/heroimagerich.png";
+import heroimagerich from "../../../RichImages/radhahero.png";
 import clickhand from "../../../RichImages/clickhand.gif";
 import headerLog from "../../../RichImages/updatedlogo.svg";
 
@@ -42,14 +42,15 @@ const Section2 = () => {
   return (
     <>
       <div className="container-fluid bg-light p-2">
-        <div className="row">
+        <div className="row newheroabcd">
           {/* Left Column with Text */}
           <div className="col-md-6 parent-class">
-            <h1 className="custom-text">Welcome To Star143</h1>
+            <h1 className="custom-text">Welcome To Radha567</h1>
             <p className="lead">
               Play Big, Win Big
-              <br /> Only On Star143
+              <br /> Only&nbsp;On&nbsp;Radha&nbsp;567
             </p>
+
             {/* <div className="second-parent">
               <a
                 href="tel:+919931437143"
@@ -67,21 +68,21 @@ const Section2 = () => {
                 <img style={{ height: "18px" }} src={whatspp} />
               </a>
             </div> */}
-            <p className="mt-3 contact-info">
+            {/* <p className="mt-3 contact-info">
               Connect With Phone Call
               <br />
             </p>
             <span className="contact-info contact-number">
-              {/* +91 {getData && getData.number} */}
+              +91 {getData && getData.number}
               +91&nbsp;9876543210
-            </span>
-            <div>
+            </span> */}
+            {/* <div>
               <div className="images-main-herosection col-md-12 py-3">
                 <div className="multi-image-main">
                   <img
                     className="herosection-images"
                     src={activeuser}
-                    alt="https://star143.com/"
+                    alt="https://radha567.com/"
                   />
                   <p>Active&nbsp;User</p>
                   <h1>1M +</h1>
@@ -90,7 +91,7 @@ const Section2 = () => {
                   <img
                     className="herosection-images"
                     src={gameicon}
-                    alt="https://star143.com/"
+                    alt="https://radha567.com/"
                   />
                   <p className="">Games</p>
                   <h1 className="">25M+</h1>
@@ -99,25 +100,25 @@ const Section2 = () => {
                   <img
                     className="herosection-images"
                     src={supporticon}
-                    alt="https://star143.com/"
+                    alt="https://radha567.com/"
                   />
                   <p>Support</p>
                   <h1>24/7</h1>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* Right Column with Image */}
           <div className="col-md-6 text-center">
             <img
               src={heroimagerich}
-              alt="https://star143.com/"
+              alt="https://radha567.com/"
               className=" banner-img"
             />
           </div>
         </div>
 
-        <div className="column second-parent">
+        {/* <div className="column second-parent">
           <a
             // href={`tel:+91${getData && getData.number}`}
             href={`tel:+919876543210`}
@@ -125,7 +126,7 @@ const Section2 = () => {
             class="download-button new-btn"
           >
             Call Now &nbsp;
-            <img style={{ height: "18px" }} src={call} />
+            <img style={{ height: "18px" }} src={call} alt="" />
           </a>
           <a
             // href={`https://wa.me/+${getData && getData.number}`}
@@ -135,10 +136,69 @@ const Section2 = () => {
             class="download-button new-btn"
           >
             WhatsApp &nbsp;
-            <img style={{ height: "18px" }} src={whatspp} />
+            <img style={{ height: "18px" }} src={whatspp} alt="" />
           </a>
-        </div>
+        </div> */}
+        <div class="connect-section">
+          <div class="connect-left">
+            <p className="connect-title">
+              Connect With Phone Call
+              <br />
+            </p>
+            <p class="connect-number">+91-99999 99999</p>
+            <div class="connect-buttons">
+              <a
+                // href={`tel:+91${getData && getData.number}`}
+                href={`tel:+919876543210`}
+                // className="btn btn-custom me-3"
+                class="download-button new-btn"
+              >
+                Call Now &nbsp;
+                <img style={{ height: "18px" }} src={call} alt="" />
+              </a>
+              <a
+                // href={`https://wa.me/+${getData && getData.number}`}
+                href={`https://wa.me/+9876543210`}
+                // href={`https://wa.me/+919999999999`}
 
+                class="download-button new-btn"
+              >
+                WhatsApp &nbsp;
+                <img style={{ height: "18px" }} src={whatspp} alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="connect-right">
+            <div className="multi-image-main">
+              <img
+                className="herosection-images"
+                src={activeuser}
+                alt="https://radha567.com/"
+              />
+              <p>Active&nbsp;User</p>
+              <h1>1M +</h1>
+            </div>
+            <div className="multi-image-main">
+              <img
+                className="herosection-images"
+                src={gameicon}
+                alt="https://radha567.com/"
+              />
+              <p className="">Games</p>
+              <h1 className="">25M+</h1>
+            </div>
+            <div className="multi-image-main">
+              <img
+                className="herosection-images"
+                src={supporticon}
+                alt="https://radha567.com/"
+              />
+              <p>Support</p>
+              <h1>24/7</h1>
+            </div>
+          </div>
+        </div>
         <button
           className="col-md-10 col-10 move-color   my-3 mb-4"
           // onClick={download}
@@ -161,7 +221,7 @@ const Section2 = () => {
           <img
             className="herosection-images"
             src={activeuser}
-            alt="https://star143.com/"
+            alt="https://radha567.com/"
           />
           <p>Active User</p>
           <h1>1M +</h1>
@@ -170,7 +230,7 @@ const Section2 = () => {
           <img
             className="herosection-images"
             src={gameicon}
-            alt="https://star143.com/"
+            alt="https://radha567.com/"
           />
           <p className="">Games</p>
           <h1 className="">25 +</h1>
@@ -179,7 +239,7 @@ const Section2 = () => {
           <img
             className="herosection-images"
             src={supporticon}
-            alt="https://star143.com/"
+            alt="https://radha567.com/"
           />
           <p>Support</p>
           <h1>24/7</h1>

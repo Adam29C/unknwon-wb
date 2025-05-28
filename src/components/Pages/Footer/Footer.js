@@ -3,7 +3,8 @@ import eighteen from "../../../RichImages/18-new.svg";
 import begameble from "../../../RichImages/begamble.png";
 import gambling from "../../../RichImages/gamblingtherapy.png";
 // import dark_back_logo from "../../../RichImages/richlogo-new-white.svg";
-import logo from "../../../RichImages/star143logo.svg";
+import logo from "../../../RichImages/newradhaLogo.png";
+// import headerLog from "../../../RichImages/newlogo1.svg";
 
 import "../../../App.css";
 import { useLocation } from "react-router-dom";
@@ -56,7 +57,7 @@ const Footer = () => {
                 <img
                   src={logo}
                   className="img-fluid footer-image float-left"
-                  alt="https://star143.com/"
+                  alt="https://radha567.com/"
                 />
               </div>
             </div>
@@ -89,23 +90,28 @@ const Footer = () => {
                   <img
                     className="img1"
                     src={begameble}
-                    alt="https://star143.com/"
+                    alt="https://radha567.com/"
                   />
                   <img
                     className="img2"
                     src={gambling}
-                    alt="https://star143.com/"
+                    alt="https://radha567.com/"
                   />
                 </div>
               )}
             </div>
           </div>
           {isIncluded && (
-            <div className="footer-last-content gCDmxv">
-              <p className="copyright-text ">
-                Copyright © 2025 - Star143 | All Rights Reserved
-              </p>
-            </div>
+            <>
+              <div className="footer-last-content gCDmxv">
+                <p className="copyright-text ">
+                  Copyright © 2025 - Radha567 | All Rights Reserved
+                </p>
+              </div>
+              {/* <div className="footer-last-content gCDmxv"> */}
+              <p className="copyright-text ">Powered by Star143</p>
+              {/* </div> */}
+            </>
           )}
         </div>
       </div>

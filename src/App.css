@@ -1357,7 +1357,10 @@ button.navbar-toggler.navbar-toggler-btn:focus {
     font-size: 16px;
   }
 }
-
+.Card_Size.game-rate-card-cust {
+  border-radius: 10px;
+  background-color: #e0eee6;
+}
 @media (max-width: 1024px) {
   .game-rate-card-cust {
     padding: 15px;
@@ -1526,4 +1529,127 @@ td.ccccc {
     height: 20px !important;
     width: 20px !important;
   }
+}
+.connect-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #fff; */
+  padding: 20px 10px;
+  font-family: sans-serif;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  margin-top: -30px;
+  width: 100%;
+}
+
+.connect-left {
+  flex: 1;
+  min-width: 350px;
+}
+
+.connect-title {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #000;
+  text-align: center;
+}
+
+.connect-number {
+  font-size: 20px;
+  color: var(--rich-new-color);
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.connect-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: -13px;
+  justify-content: center;
+}
+
+.connect-btn {
+  background-color: var(--rich-new-color);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.connect-btn i {
+  font-size: 16px;
+}
+
+.connect-right {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  min-width: 280px;
+
+}
+
+.connect-info-block {
+  color: #003f3f;
+  min-width: 80px;
+}
+
+.connect-icon {
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.connect-info-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.connect-info-value {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/* 🔸 Responsive for small screens */
+@media (max-width: 768px) {
+  .connect-section {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .connect-left,
+  .connect-right {
+    width: 100%;
+  }
+
+  .connect-buttons {
+    justify-content: center;
+  }
+
+  .connect-number {
+    font-size: 18px;
+  }
+
+  .connect-btn {
+    width: 140px;
+    justify-content: center;
+  }
+}
+.newheroabcd {
+  display: flex;
+  align-items: center;
 }

@@ -91,7 +91,7 @@ const Pana_Chart = () => {
                   <img
                     className="game-icons-img"
                     src={stars}
-                    alt="https://star143.com/"
+                    alt="https://radha567.com/"
                   />
                   <h1 class="mb-0 ms-2 me-2 rich-game-title backgroundoftitle">
                     {location.state.title}
@@ -99,7 +99,7 @@ const Pana_Chart = () => {
                   <img
                     className="game-icons-img"
                     src={stars}
-                    alt="https://star143.com/"
+                    alt="https://radha567.com/"
                   />
                 </div>
               </div>

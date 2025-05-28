@@ -61,13 +61,13 @@ const StartLine = () => {
             <img
               className="game-icons-img"
               src={star}
-              alt="https://star143.com/"
+              alt="https://radha567.com/"
             />
             <h5 className="mb-0 ms-2 me-2 rich-game-title">STARLINE GAMES</h5>
             <img
               className="game-icons-img"
               src={star}
-              alt="https://star143.com/"
+              alt="https://radha567.com/"
             />
           </div>
           <p className="rich-game-title-text">

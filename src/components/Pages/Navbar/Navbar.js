@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { downloadAPK } from "../../Helpers/DownloadAPK";
 import downloadbutton from "../../../RichImages/downloadbutton.svg";
 // import headerLog from "../../../RichImages/Websitelogo12.png";
-import headerLog from "../../../RichImages/star143logo.svg";
+import headerLog from "../../../RichImages/newradhaLogo.png";
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -76,7 +76,7 @@ const Logo = () => {
         <img
           className="logo_navbar"
           src={headerLog}
-          alt="https://star143.com/"
+          alt="https://radha567.com/"
         />
       </Link>
     </>
@@ -136,7 +136,7 @@ const DownloadButton = () => {
               <img
                 className="test_image"
                 src={downloadbutton}
-                alt="https://star143.com/"
+                alt="https://radha567.com/"
               />
             </button>
           </div>

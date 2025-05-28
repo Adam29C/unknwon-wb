@@ -31,7 +31,7 @@ const FandQSection = () => {
             <img
               className="game-icons-img"
               src={star}
-              alt="https://star143.com/"
+              alt="https://Radha 567.com/"
             />{" "}
             <h1 className="mb-0 ms-2 me-2 rich-game-title">
               Frequently Asked Questions
@@ -39,7 +39,7 @@ const FandQSection = () => {
             <img
               className="game-icons-img"
               src={star}
-              alt="https://star143.com/"
+              alt="https://Radha 567.com/"
             />
           </div>
 
@@ -55,7 +55,7 @@ const FandQSection = () => {
                     className="d-flex align-items-center justify-content-between accordion-header"
                     onClick={() => toggleAccordion("ramabet")}
                   >
-                    <div className="faq-title">What is Star143 ?</div>
+                    <div className="faq-title">What is Radha567 ?</div>
                     <div className="collapse-icon">
                       <i
                         className={`gry-col fa ${
@@ -69,7 +69,7 @@ const FandQSection = () => {
                   {isOpen.ramabet && (
                     <div className="description-text">
                       <br />
-                      Star143 Is A Satta Matka Gaming App Where You Can Play
+                      Radha567 Is A Satta Matka Gaming App Where You Can Play
                       Games And Win Jackpot.
                     </div>
                   )}
@@ -87,7 +87,7 @@ const FandQSection = () => {
                     onClick={() => toggleAccordion("games")}
                   >
                     <div className=" faq-title">
-                      What games are available on Star143 ?
+                      What games are available on Radha567 ?
                     </div>
                     <div className="collapse-icon">
                       <i
@@ -132,7 +132,7 @@ const FandQSection = () => {
                   {isOpen.depositWithdrawal && (
                     <div className="description-text">
                       <br />
-                      In Star143 , We Allow Minimum of 100.00 Rs/- Deposit and
+                      In Radha567 , We Allow Minimum of 100.00 Rs/- Deposit and
                       500.00 Rs/- Withdrawals.
                     </div>
                   )}
@@ -149,7 +149,9 @@ const FandQSection = () => {
                     className="d-flex align-items-center justify-content-between accordion-header"
                     onClick={() => toggleAccordion("license")}
                   >
-                    <div className="faq-title">Does Star143 have License ?</div>
+                    <div className="faq-title">
+                      Does Radha567 have License ?
+                    </div>
                     <div className="collapse-icon">
                       <i
                         className={`gry-col fa ${
@@ -163,7 +165,7 @@ const FandQSection = () => {
                   {isOpen.license && (
                     <div className="description-text">
                       <br />
-                      Yes, Star143 Has A Sub License In Malta. All Rights That
+                      Yes, Radha567 Has A Sub License In Malta. All Rights That
                       Allows To Operate Software Worldwide.
                     </div>
                   )}
@@ -181,7 +183,7 @@ const FandQSection = () => {
                     onClick={() => toggleAccordion("whyChoose")}
                   >
                     <div className=" faq-title">
-                      Why Choose Star143 Among Other Providers ?
+                      Why Choose Radha567 Among Other Providers ?
                     </div>
                     <div className="collapse-icon">
                       <i
@@ -196,7 +198,7 @@ const FandQSection = () => {
                   {isOpen.whyChoose && (
                     <div className="description-text">
                       <br />
-                      Star143 Is The Most Trusted Gaming Provider Worldwide.
+                      Radha567 Is The Most Trusted Gaming Provider Worldwide.
                     </div>
                   )}
                 </div>

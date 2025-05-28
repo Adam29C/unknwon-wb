@@ -54,9 +54,9 @@ const StartLine = () => {
       <div className="available-component">
         <div className="heding-sec heading-sec-custom cust-m text-center">
           <div className="d-flex text-center justify-content-center align-items-center">
-            <img className="game-icons-img" src={star} alt="https://star143.com/" />
+            <img className="game-icons-img" src={star} alt="https://radha567.com/" />
             <h5 className="mb-0 ms-2 me-2 rich-game-title">JACKPOT GAMES</h5>
-            <img className="game-icons-img" src={star} alt="https://star143.com/" />
+            <img className="game-icons-img" src={star} alt="https://radha567.com/" />
           </div>
           <p className="rich-game-title-text">
             Most Trusted Game Available on our Platform
