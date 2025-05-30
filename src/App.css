@@ -1624,7 +1624,7 @@ td.ccccc {
 /* 🔸 Responsive for small screens */
 @media (max-width: 768px) {
   .connect-section {
-    flex-direction: column;
+    /* flex-direction: column; */
     padding: 20px;
     align-items: center;
     text-align: center;
@@ -1825,7 +1825,6 @@ td.ccccc {
 }
 .hover-3 {
   --c: linear-gradient(#fff 0 0); /* update the color here */
-
   padding-bottom: 0.15em;
   background: var(--c), var(--c);
   background-size: 0.3em 0.1em;
@@ -1836,4 +1835,35 @@ td.ccccc {
 .hover-3:hover {
   background-size: 100% 0.1em;
   background-position: 10% 100%, 90% 100%;
+}
+.mobileonly-button {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .mobileonly-button {
+    display: none;
+  }
+}
+.mobileonly-states {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+
+@media (min-width: 768px) {
+  .mobileonly-states {
+    display: none;
+  }
+}
+.seenonlargescreen {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .seenonlargescreen {
+    display: flex;
+  }
+    
 }

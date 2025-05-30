@@ -108,6 +108,36 @@ const Section2 = () => {
               </div>
             </div> */}
           </div>
+          {/* when mobile ... */}
+          <div className="mobileonly-states">
+            <div className="multi-image-main">
+              <img
+                className="herosection-images"
+                src={activeuser}
+                alt="https://radha567.com/"
+              />
+              <p>Active&nbsp;User</p>
+              <h1>1M +</h1>
+            </div>
+            <div className="multi-image-main">
+              <img
+                className="herosection-images"
+                src={gameicon}
+                alt="https://radha567.com/"
+              />
+              <p className="">Games</p>
+              <h1 className="">25M+</h1>
+            </div>
+            <div className="multi-image-main">
+              <img
+                className="herosection-images"
+                src={supporticon}
+                alt="https://radha567.com/"
+              />
+              <p>Support</p>
+              <h1>24/7</h1>
+            </div>
+          </div>
           {/* Right Column with Image */}
           <div className="col-md-6 text-center">
             <img
@@ -139,6 +169,20 @@ const Section2 = () => {
             <img style={{ height: "18px" }} src={whatspp} alt="" />
           </a>
         </div> */}
+
+        {/* when mobile.... */}
+        <button
+          className="col-md-10 col-10 move-color   my-3 mb-4 mobileonly-button"
+          onClick={download}
+        >
+          <div className="download-icon">
+            <i
+              className="fa-2x fa fa-download  custom-color"
+              aria-hidden="true"
+            />
+          </div>
+          <h1 className="mb-0 font-400 curser-pointer">Download App</h1>
+        </button>
         <div class="connect-section">
           <div class="connect-left">
             <p className="connect-title">
@@ -169,7 +213,7 @@ const Section2 = () => {
             </div>
           </div>
 
-          <div class="connect-right">
+          <div class="connect-right seenonlargescreen">
             <div className="multi-image-main">
               <img
                 className="herosection-images"
@@ -199,8 +243,10 @@ const Section2 = () => {
             </div>
           </div>
         </div>
+
+        {/* when desktop... */}
         <button
-          className="col-md-10 col-10 move-color   my-3 mb-4"
+          className="col-md-10 col-10 move-color seenonlargescreen   my-3 mb-4"
           onClick={download}
         >
           <div className="download-icon">
@@ -209,7 +255,6 @@ const Section2 = () => {
               aria-hidden="true"
             />
           </div>
-          {/* <img src={headerLog} /> */}
           <h1 className="mb-0 font-400 curser-pointer">Download App</h1>
         </button>
       </div>
