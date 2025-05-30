@@ -156,7 +156,7 @@ button.download-button {
   font-size: 18px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: var(--rich-new-color);
 }
 
 .contact-btn .contact-button-cll {
@@ -241,8 +241,8 @@ button.download-button {
     font-size: 1.2rem;
   }
   .button-container {
-    top: 4px;
-    position: absolute;
+    top: 100px !important;
+    position: absolute !important;
     display: flex;
     justify-content: center;
     /* border:  4px solid white; */
@@ -261,7 +261,7 @@ button.download-button {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    color: #000000;
+    color: var(--rich-new-color);
   }
 }
 @media (max-width: 768px) {
@@ -275,7 +275,7 @@ button.download-button {
     font-size: 18px;
     line-height: 30px;
     text-align: center;
-    color: #000000;
+    color: var(--rich-new-color);
   }
 }
 /* .btn-custom {

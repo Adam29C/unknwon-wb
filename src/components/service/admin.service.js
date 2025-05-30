@@ -73,13 +73,12 @@ export async function GET_ALL_STARTLINE_GAMES(data, token) {
 export async function GET_ALL_GAMES_RESULT(data, token) {
   try {
     const res = await axios.post(`${Config.base_url}api/web/panachart`, data, {
-    // const res = await axios.post(
-    //   `http://localhost:6999/api/web/panachart`,
-    //   data,
+      // const res = await axios.post(
+      //   `http://localhost:6999/api/web/panachart`,
+      //   data,
       // {
-        data: {},
-      }
-    );
+      data: {},
+    });
     return await res?.data;
   } catch (err) {
     return err;
@@ -90,13 +89,12 @@ export async function GET_ALL_GAMES_RESULT(data, token) {
 export async function GET_ALL_JODI_CHART(data, token) {
   try {
     const res = await axios.post(`${Config.base_url}api/web/jodichart`, data, {
-    // const res = await axios.post(
-    //   `http://localhost:6999/api/web/jodichart`,
-    //   data,
+      // const res = await axios.post(
+      //   `http://localhost:6999/api/web/jodichart`,
+      //   data,
       // {
-        data: {},
-      }
-    );
+      data: {},
+    });
     return await res?.data;
   } catch (err) {
     return err;

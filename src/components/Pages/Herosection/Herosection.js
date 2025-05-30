@@ -41,7 +41,7 @@ const Section2 = () => {
   };
   return (
     <>
-      <div className="container-fluid bg-light p-2">
+      <div className="container-fluid  p-2">
         <div className="row newheroabcd">
           {/* Left Column with Text */}
           <div className="col-md-6 parent-class">
@@ -113,7 +113,7 @@ const Section2 = () => {
             <img
               src={heroimagerich}
               alt="https://radha567.com/"
-              className=" banner-img"
+              className="banner-img"
             />
           </div>
         </div>
@@ -145,11 +145,11 @@ const Section2 = () => {
               Connect With Phone Call
               <br />
             </p>
-            <p class="connect-number">+91-99999 99999</p>
+            <p class="connect-number">+91&nbsp;{getData && getData.number}</p>
             <div class="connect-buttons">
               <a
-                // href={`tel:+91${getData && getData.number}`}
-                href={`tel:+919876543210`}
+                href={`tel:+91${getData && getData.number}`}
+                // href={`tel:+919876543210`}
                 // className="btn btn-custom me-3"
                 class="download-button new-btn"
               >
@@ -157,8 +157,8 @@ const Section2 = () => {
                 <img style={{ height: "18px" }} src={call} alt="" />
               </a>
               <a
-                // href={`https://wa.me/+${getData && getData.number}`}
-                href={`https://wa.me/+9876543210`}
+                href={`https://wa.me/+${getData && getData.number}`}
+                // href={`https://wa.me/+9876543210`}
                 // href={`https://wa.me/+919999999999`}
 
                 class="download-button new-btn"
@@ -201,7 +201,7 @@ const Section2 = () => {
         </div>
         <button
           className="col-md-10 col-10 move-color   my-3 mb-4"
-          // onClick={download}
+          onClick={download}
         >
           <div className="download-icon">
             <i

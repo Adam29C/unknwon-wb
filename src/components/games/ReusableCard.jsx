@@ -50,6 +50,7 @@ const Section4 = ({ GameData, title, showPana }) => {
   const downloadFile = async () => {
     await downloadAPK();
   };
+  // console.log(ModalData);
   return (
     <>
       <div className="available-component">
@@ -268,7 +269,7 @@ const Section4 = ({ GameData, title, showPana }) => {
 
       {/* .................................................. */}
 
-      <Modal show={show} centered onHide={handleClose} size="lg">
+      {/* <Modal show={show} centered onHide={handleClose} size="lg">
         <Modal.Header closeButton>
           <Modal.Title>{RowData?.providerName}</Modal.Title>
         </Modal.Header>
@@ -302,6 +303,91 @@ const Section4 = ({ GameData, title, showPana }) => {
               </tr>
             </tbody>
           </Table>
+        </Modal.Body>
+      </Modal> */}
+
+      <Modal
+        show={show}
+        centered
+        onHide={handleClose}
+        size="md"
+        className="ptm-modal"
+      >
+        <Modal.Header closeButton className="ptm-header">
+          <div className="ptm-icon">
+            {ModalData?.message === "Close for today" ? (
+              <img
+                className="playicon"
+                src={redicon}
+                style={{ marginRight: "8px" }}
+              />
+            ) : (
+              <img className="playicon" src={greenicon} />
+            )}
+          </div>
+          <div className="closeicon" onClick={handleClose}>
+            ✖
+          </div>
+          <Modal.Title className="ptm-title">
+            {RowData?.providerName}
+          </Modal.Title>
+          <p
+            style={{
+              color:
+                ModalData?.message === "Close for today"
+                  ? "red"
+                  : ModalData?.message == "Running for close"
+                  ? "#4BB543"
+                  : ModalData?.message == "Running for open"
+                  ? "#4BB543"
+                  : "#4BB543",
+            }}
+          >
+            {ModalData?.message === "Close for today"
+              ? "Close For Today"
+              : ModalData?.message == "Betting is running for close"
+              ? "Running For Close"
+              : ModalData?.message == "Betting is running for open"
+              ? "Running For Open"
+              : "Running For Open"}
+          </p>
+        </Modal.Header>
+
+        <Modal.Body>
+          <div className="ptm-time-box">
+            <div className="ptm-time-header">
+              {ModalData?.message === "Close for today"
+                ? "Close For Today"
+                : ModalData?.message == "Betting is running for close"
+                ? "Running For Close"
+                : ModalData?.message == "Betting is running for open"
+                ? "Running For Open"
+                : "Running For Open"}
+            </div>
+
+            <div className="ptm-time-row">
+              <span className="ptm-label">Open Bid Time</span>
+              <span className="ptm-value">{ModalData?.OBT}</span>
+            </div>
+            <div className="ptm-time-row">
+              <span className="ptm-label">Close Bid Time</span>
+              <span className="ptm-value">{ModalData?.CBT}</span>
+            </div>
+            <div className="ptm-time-row">
+              <span className="ptm-label">Open Bid Result Time</span>
+              <span className="ptm-value">{ModalData?.OBRT}</span>
+            </div>
+            <div className="ptm-time-row">
+              <span className="ptm-label">Close Bid Result Time</span>
+              <span className="ptm-value">{ModalData?.CBRT}</span>
+            </div>
+          </div>
+
+          <div className="ptm-footer">
+            <button className="ptm-ok-button" onClick={handleClose}>
+              OK
+            </button>
+          </div>
         </Modal.Body>
       </Modal>
     </>

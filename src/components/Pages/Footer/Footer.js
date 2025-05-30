@@ -109,7 +109,7 @@ const Footer = () => {
                 </p>
               </div>
               {/* <div className="footer-last-content gCDmxv"> */}
-              <p className="copyright-text ">Powered by Star143</p>
+              <p className="copyright-text ">Powered by Star567 Online Gaming Service</p>
               {/* </div> */}
             </>
           )}

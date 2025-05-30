@@ -4,7 +4,9 @@ import { downloadAPK } from "../../Helpers/DownloadAPK";
 import downloadbutton from "../../../RichImages/downloadbutton.svg";
 // import headerLog from "../../../RichImages/Websitelogo12.png";
 import headerLog from "../../../RichImages/newradhaLogo.png";
-
+import homeicon from "../../../RichImages/homeicon.svg";
+import charticon from "../../../RichImages/charts.svg";
+import downloadbuttonn from "../../../RichImages/downloadbuttonn.svg";
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const collapseRef = useRef(null);
@@ -87,31 +89,29 @@ const NavigationLinks = () => {
   return (
     <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
       <li className="nav-item">
-        <Link
-          className="nav-link link-hover-effect"
-          // className="nav-link "
-          // style={{ color: "white" }}
-          // className={({ isActive }) => (isActive ? "nav-link " : "nav-link ")}
-          to="/"
-        >
-          Home
-        </Link>
+        <div className="nvbaralign">
+          <img src={homeicon} className="navicons" />
+
+          <Link className="nav-link hover-3" to="/">
+            Home
+          </Link>
+        </div>
       </li>
       <li className="nav-item">
-        <Link
-          // style={{ color: "white" }}
-          // className={({ isActive }) => (isActive ? "nav-link " : "nav-link ")}
-          className="nav-link link-hover-effect"
-          to="/charts"
-        >
-          Charts
-        </Link>
+        <div className="nvbaralign">
+          <img src={charticon} className="navicons" />
+
+          <Link className="nav-link hover-3" to="/charts">
+            Charts
+          </Link>
+        </div>
       </li>
     </ul>
   );
 };
 
-const download = async () => {
+const download = async (e) => {
+  e.preventDefault();
   await downloadAPK();
 };
 
@@ -126,7 +126,7 @@ const DownloadButton = () => {
       <div class="button-container_3">
         <div class="button-container_2">
           <div class="button-container">
-            <button
+            {/* <button
               class="download-button test border"
               // onClick={download}
               // disabled
@@ -135,10 +135,16 @@ const DownloadButton = () => {
               &nbsp;
               <img
                 className="test_image"
-                src={downloadbutton}
+                src={downlooadicon}
                 alt="https://radha567.com/"
               />
-            </button>
+            </button> */}
+
+            <img
+              onClick={(e) => download(e)}
+              className="da-download-btn"
+              src={downloadbuttonn}
+            />
           </div>
         </div>
       </div>
