@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.46faac19.css",
-    "main.js": "/static/js/main.cb7c8d8c.js",
-    "static/media/radha567logo.svg": "/static/media/radha567logo.fac887957c9b0d31ac670bb1757747e6.svg",
+    "main.css": "/static/css/main.235db73f.css",
+    "main.js": "/static/js/main.7e47f5ba.js",
     "static/media/clickhand.gif": "/static/media/clickhand.f32f801d35732f16d213.gif",
-    "static/media/heroimagerich.png": "/static/media/heroimagerich.646faac4dab5ec02289b.png",
+    "static/media/radhahero.png": "/static/media/radhahero.95e96c7efee3cf8cdf1c.png",
     "static/media/begamble.png": "/static/media/begamble.36f030319a0aa9c1cf1a.png",
     "static/media/gamblingtherapy.png": "/static/media/gamblingtherapy.9823ef613512a9b27da6.png",
     "static/media/updatedlogo.svg": "/static/media/updatedlogo.dd493b3430c5a815a23825d6caef2800.svg",
+    "static/media/downloadbuttonn.svg": "/static/media/downloadbuttonn.db52c7462afbe12310ae2a804e0997f1.svg",
     "static/media/greenicon.svg": "/static/media/greenicon.d339394aa456fd9c1909169d08880258.svg",
     "static/media/redicon.svg": "/static/media/redicon.5ca6f30dc7d3799f3a4dc75fe62f3aca.svg",
     "index.html": "/index.html",
@@ -18,17 +18,19 @@
     "static/media/whatspp.svg": "/static/media/whatspp.561303010df3d322181e8dba8744a0d0.svg",
     "static/media/active.svg": "/static/media/active.f7e040224f040c17a9c01ddf2fffb570.svg",
     "static/media/grid-svgrepo-com (2).svg": "/static/media/grid-svgrepo-com (2).795e940a644f44732878.svg",
+    "static/media/homeicon.svg": "/static/media/homeicon.fe9e5019da8d1f52713e59c6be3dc250.svg",
     "static/media/game.svg": "/static/media/game.3fa54e2f81d1167fd418de3802bfb8d2.svg",
     "static/media/newchartlist.svg": "/static/media/newchartlist.53fd665b851e52b05b25f8b300b469a6.svg",
     "static/media/newheader.svg": "/static/media/newheader.7397ffc015ab07245bf6.svg",
     "static/media/stars.svg": "/static/media/stars.c52ed37e7daabefe38de1da8e8151865.svg",
+    "static/media/charts.svg": "/static/media/charts.bc992ae2410ce90be5eaceac8afde13e.svg",
     "static/media/downloadbutton.svg": "/static/media/downloadbutton.840efffb70b4b52062b14aa34fd18081.svg",
     "static/media/back.svg": "/static/media/back.cc34487152cdb4a83e93fd9ee56bc16b.svg",
-    "main.46faac19.css.map": "/static/css/main.46faac19.css.map",
-    "main.cb7c8d8c.js.map": "/static/js/main.cb7c8d8c.js.map"
+    "main.235db73f.css.map": "/static/css/main.235db73f.css.map",
+    "main.7e47f5ba.js.map": "/static/js/main.7e47f5ba.js.map"
   },
   "entrypoints": [
-    "static/css/main.46faac19.css",
-    "static/js/main.cb7c8d8c.js"
+    "static/css/main.235db73f.css",
+    "static/js/main.7e47f5ba.js"
   ]
 }
