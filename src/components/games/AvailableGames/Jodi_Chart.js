@@ -45,7 +45,15 @@ import YUGNIGHT from "../../Charts/JodiCharts/YUGNIGHT";
 import DHARMNIGHT from "../../Charts/JodiCharts/DHARMNIGHT";
 
 import { GetAllCharts } from "../../Helpers/GetCharts";
-
+import RADHAMORNING from "../../Charts/JodiCharts/RADHAMORNING";
+import SHRIMORNING from "../../Charts/JodiCharts/SHRIMORNING";
+import RAMAMORNING from "../../Charts/JodiCharts/RAMAMORNING";
+import RADHADAY from "../../Charts/JodiCharts/RADHADAY";
+import SHRIDAY from "../../Charts/JodiCharts/SHRIDAY";
+import RAMADAY from "../../Charts/JodiCharts/RAMADAY";
+import RADHANIGHT from "../../Charts/JodiCharts/RADHANIGHT";
+import SHRINIGHT from "../../Charts/JodiCharts/SHRINIGHT";
+import RAMANIGHT from "../../Charts/JodiCharts/RAMANIGHT";
 const Pana_Chart = () => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -219,6 +227,31 @@ const Pana_Chart = () => {
               ) : nameRejext(location.state.title) ===
                 nameRejext("YUGNIGHT") ? (
                 <YUGNIGHT chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("RADHAMORNING") ? (
+                <RADHAMORNING chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("SHRIMORNING") ? (
+                <SHRIMORNING chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("RAMAMORNING") ? (
+                <RAMAMORNING chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("RADHADAY") ? (
+                <RADHADAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) === nameRejext("SHRIDAY") ? (
+                <SHRIDAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) === nameRejext("RAMADAY") ? (
+                <RAMADAY chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("RADHANIGHT") ? (
+                <RADHANIGHT chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("SHRINIGHT") ? (
+                <SHRINIGHT chartData={getData.data} />
+              ) : nameRejext(location.state.title) ===
+                nameRejext("RAMANIGHT") ? (
+                <RAMANIGHT chartData={getData.data} />
               ) : (
                 ""
               )}
